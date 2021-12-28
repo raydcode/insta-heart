@@ -24,6 +24,7 @@ const createHeart = (event) => {
   times.innerHTML = ++timesClicked;
 
   heart.appendChild(clickHeart);
+  setTimeout(() => clickHeart.remove(), 1000);
 };
 
 heart.addEventListener('click', (event) => {
